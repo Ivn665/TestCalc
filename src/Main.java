@@ -84,7 +84,7 @@ public class Main {
                 throw new IOException();
             }
             String s = " ";
-            if(x>100){
+            if(x==100){
                 s = "C";
                 x = x - 100;
             }
