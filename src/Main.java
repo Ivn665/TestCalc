@@ -84,13 +84,21 @@ public class Main {
                 throw new IOException();
             }
             String s = " ";
-            if(x==100){
+            if(x>100){
                 s = "C";
                 x = x - 100;
             }
-            if(x>49 && x<100){
+            if(x>89){
+                s = "XC";
+                x = x - 90;
+            }
+            if(x>49){
                 s = "L";
                 x = x- 50;
+            }
+            if(x>39){
+                s = "XL";
+                x = x- 40;
             }
             a = x / 10;
             for(b=0; b<a; ++b){
